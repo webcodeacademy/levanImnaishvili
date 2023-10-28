@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    /* background-image: url(../img/background2.webp);
+    background-size: 100%; */
+    background-color: #3d3d3d;
+}
+
+/* --------------------------header------------------------- */
+
+
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    margin-top: -100px;
+    color: #a1a1a1;
+    font-size: 50px;
+}
+header h1 a:hover{
+    color: #a1a1a165;
+}
+header ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul a{
+    font-size: 28px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: #000000;
+    background-color: #a1a1a1;
+    position: relative;
+}
+header ul a:hover{
+    background-color: #a1a1a125;
+}
+
+header ul a.active:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.fa-bars-icon{
+    display: none;
+    text-align: right;
+}
+/* ----------------------main----------------------------- */
+
+
+
+/* slideri srulad*/
+
+.item{
+    height: 550px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* -------------------------------- */
+
+.articles{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.articles article{
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #3d3d3d;
+    margin-bottom: 50px;
+}
+.articles article img{
+    width: 100%;
+}
+.articles article img:hover{
+    border: 4px solid #3d3d3d;
+}
+.articles h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.articles h2 a{
+    color: #ffffff;
+}
+.articles h2 a:hover{
+    color: #000000;
+}
+.articles p{
+    color: #ffffff;
+}
+
+
+/* --------------------------------------- */
+
+
+/*chati srulad*/
+
+.chatbutton{
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #a1a1a169;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+}
+
+.chatbutton:hover, .send:hover{
+    cursor: pointer;
+    background-color: #161818;
+}
+.chatbox p{
+    color: #ffffff;
+}
+.chatboxmain p{
+    color: #ffffff;
+}
+.chatbox{
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #302b2b8e;
+    display: none;
+}
+
+.chatbox .chatboxheader{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+    border-radius: 30px;
+    background-color: #00000091;
+}
+.chatboxheader p{
+    font-weight: bold;
+}
+
+.chatbox .chatboxmain{
+    width: 100%;
+    padding: 20px;
+}
+.chatboxmain p{
+    font-weight: bold;
+}
+
+.chatbox .chatboxmain input, .chatbox .chatboxmain textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 14px;
+    background-color: #00000091;
+}
+
+.send{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: #00000091;
+    border-radius: 30px;
+}
+
+
+/* ------------------------footer-------------------------- */
+
+
+footer{
+    height: 300px;
+    background-color: #000000cb;
+}
+footer p{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+footer a{
+    color: #a1a1a1;
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+footer a:hover{
+    color: #ffffff;
+}
+.fullfooter{
+    width: 90%;
+    height: 90%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.foot1{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.socialicons div a{
+    font-size: 48px;
+    color: #a1a1a1;
+}
+.socialicons div a:hover{
+    color: #a1a1a165;
+}
+
+
+/* ----------------------about------------------------- */
+h4{
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin: 20px;
+}
+.abouttext{
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+.map{
+    max-width: 100%;
+    height: 300px;
+}
+.aboutus{
+    text-align: center;
+    margin: 30px;
+}
+
+/* ----------------------contact------------------------- */
+.contactus{
+    justify-content: space-around;
+}
+h3{
+    margin-left: 10%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+.forms{
+    border-top: 6px solid #ffffff;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.forms input, .forms textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    resize: none;
+    color: #ffffff;
+    background-color: #3d3d3d;
+    border-bottom: 2px solid #ffffff;
+}
+
+.forms input::-webkit-input-placeholder{
+    color: #ffffff;
+}
+
+.forms input::-moz-placeholder{
+    color: #ffffff;
+}
+
+.forms input:-ms-input-placeholder{
+    color: #ffffff;
+}
+
+.forms input::-ms-input-placeholder{
+    color: #ffffff;
+}
+
+.forms input::placeholder{
+    color: #ffffff;
+}
+.forms textarea::-webkit-input-placeholder{
+    color: #ffffff;
+}
+.forms textarea::-moz-placeholder{
+    color: #ffffff;
+}
+.forms textarea:-ms-input-placeholder{
+    color: #ffffff;
+}
+.forms textarea::-ms-input-placeholder{
+    color: #ffffff;
+}
+.forms textarea::placeholder{
+    color: #ffffff;
+}
+
+
+.forms input[type="submit"]{
+    border: none;
+    background-color: rgba(51, 221, 51, 0.13)3d;
+}
+.forms input[type="submit"]:hover{
+    background-color: #00a51e;
+    cursor: pointer;
+}
+.contactusinfo{
+    flex-direction: column;
+    border-top: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+}
+.contactusinfo p{
+    color: #ffffff;
+    text-align: center;
+}
+.contactusinfo p:hover{
+cursor: pointer;
+}
+.contactusinfo h4:hover{
+    cursor: pointer;
+}
+.socialicons1{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+
+
+
+/* --------------------------services---------------------- */
+.servicesmain article a{
+    color: #ffffff;
+    text-align: center;
+}
+.groomtext{
+    width: 50%;
+    flex-direction: column;
+    
+}
+.groomtext p{
+    color: #ffffff;
+    text-align: center;
+}
+.groomtext h2{
+    color: #ffffff;
+}
+.groomtext h2 a{
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.groomimg{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.vetservicelink{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+/* ----------------------------vetservice------------------------- */
+
+.vetservicemain{
+    background-image: url(../img/vetbackground);
+    
+}
+.vetclinic0{
+    justify-content: space-around;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.vetclinic1{
+    width: 50%;
+    overflow: hidden;
+}
+.vetclinic1 img{
+    width: 100%;
+}
+.vetclinic2 p, h2{
+    text-align: center;
+}
+.vetclinic3{
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.vetclinic5{
+    width: 100%;
+    overflow: hidden;
+}
+.vetclinic5 img{
+    width: 100%;
+}
+.vetclinic2 p{
+    margin-bottom: 80px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+/* ----------------------------finish------------------------- */
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .fa-bars-icon{
+      display: block;
+      color: #a1a1a1;
+      font-size: 30px;
+    }
+    
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        margin-bottom: 20px;
+    }
+    
+    header nav{
+        margin-top: 50px;
+        display: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 420px) {
+    
+    .flexresponsive{
+        flex-direction: column;
+    }
+    .flexresponsivereverse{
+        flex-direction: column-reverse;
+    }
+    footer{
+        height: 1050px;
+    }
+    .fullfooter{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

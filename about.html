@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="style/style.css">
+    <title>woof</title>
+    <link rel="icon" href="favicon.ico.ico">
+</head>
+<body>
+    <header id="header" >
+        <h1><a href="index.html"><i class="fa-solid fa-dog"></i>Woof</a></h1>
+        
+        <p class="fa-bars-icon" onclick="display()">
+            <i class="fa-solid fa-bars"></i>
+        </p>
+        <nav id="nav"></nav>
+    </header>
+    <main>
+            
+            <div class="aboutus">
+                <h4>ჩვენს შესახებ</h4>
+                <p class="abouttext">
+                    შპს "woof" არის კომპანია&#44; რომელიც გთავაზობთ სრულ სერვისს ძაღლის შეძენის&#44; აღზრდის&#44; მოვლის და ა&#46;შ საკითხებში
+                    <br>
+                    <br>
+                    ჩვენი სერვისი მოიცავს&#44; ისეთ ასპექტებს როგორიცაა ვეტერინარის კონსულტაცია და სრული ვეტერინარული მომსახურება&#44; მწვრთნელის დაქირავება და წვრთნის პროცესის დაგეგმვა&#44; ძაღლის მოწესრიგება &#40;დაბანა&#44; დავარცხნა&#44; შეკრეჭა&#41; ასევე გასეირნების სერვისს&#46;
+                    <br>
+                    <br> 
+                    ვეტერინარული მომსახურება &#8722; ვეტ მომსახურება ხორციელდება როგორც ჩვენს კლინიკაში ასევე დავნერგეთ ბინაზე მომსახურების სერვისიც
+                    <br>
+                    <br>
+                    ტრენერის მომსახურება და წვრთნის დაგეგმვა &#8722; ჩვენი პროფესიონალი ტრენერები შეგასწავლიან პირველ რიგში თქვენ ძაღლთან ურთიერთობას და ამის შემდეგ თქვენს ოთხფეხა მეგობართან გაივლით კურსს&#44; რომლის დახმარებითაც შეძლებთ თქვენ თვითონ შეასწავლოთ აუცილებელი და სასურველი ბრძანებები&#46;
+                    <br>
+                    <br>
+                    ძაღლის მოწესრიგება &#8722; დაბანა&#44; დავარცხნა&#44; კრეჭვის პროცესი მიმდინარეობს ყოველგვარი ძალდატანების გარეშე მხოლოდ წახალისებით რათა ეს პროცესი ძალიან სასიამოვნო გახდეს თქვენი ოთხფეხა მეგობრებისთვის&#46;
+                    <br>
+                    <br>
+                    ძაღლის გასეირნება &#8722; გამსეირნებელთან შეთანხმდებით სასურველ დროის მონაკვეთზე როდის რამდენი ხნით გსურთ სეირნობდეს თქვენი ძაღლი&#44; გამსეირნებელი უზრუნველყოფს საცხოვრებელი ადგილიდან ძაღლის ტრანსპორტირებას შესაბამის ადგილამდე მის სეირნობას და სახლში უსაფრთხოდ დაბრუნებას&#46;
+                </p>
+            </div>
+        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.659242435227!2d44.73462241496915!3d41.7278713827819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447305f35cf3d5%3A0x97134ac624f7b5a7!2s27%20Mamia%20Gurieli%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1670800787513!5m2!1sen!2sge" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <p class="chatbutton" onclick="gamochena ()">
+            მოგვწერეთ აქ
+        </p>
+        <div class="chatbox " id="chatbox">
+            <div class="chatboxheader flex">
+                <p>მოგვწერეთ შეტყობინება</p>
+                <p onclick="gaqroba()">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+            </div>
+            <div class="chatboxmain">
+                <input type="text" name="firstname" id="firstname" placeholder="saxeli">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="chaweret tqveni shetyobineba"></textarea>
+                <p class="send" onclick="gaqroba()">გაგზავნა</p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex fullfooter">
+            <div class="flex foot1">
+                <p class="paragraph">CONTENT</p>
+                <a href="#">Calendar of festivities</a>
+                <a href="#">New assets</a>
+                <a href="#">The most popular content</a>
+                <a href="#">Search trends</a>
+            </div>
+            <div class="flex foot1">
+                <p class="paragraph">INFORMATION</p>
+                <a href="#">Pricing</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Jobs</a>
+            </div>
+            <div class="flex foot1"> 
+                <p class="paragraph">LEGAL</p>
+                <a href="#">Terms and conditions</a>
+                <a href="#">License agreement</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Copyright information</a>
+                <a href="#">Cookies policy</a>
+                <a href="#">Cookies settings</a>
+            </div>
+            <div class="flex foot1"> 
+                <p class="paragraph">SUPPORT</p>
+                <a href="">FAQ</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="flex foot1 socialicons">
+                <div> <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> </div>
+                <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+                <div><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></div>
+            </div>
+        </div>
+        
+
+    </footer>
+    <script src="https://kit.fontawesome.com/44048e0551.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/nav.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
